@@ -5,15 +5,42 @@
     display: flex;
     padding: 20px;
     .content {
+        padding-left: 20px;
         width: 90%;
+        .header {
+            gap: 40px;
+            .text {
+                .name {
+                    font-size: 30px;
+                }
+            }
+            .image {
+                border-radius: 15px;
+                width: 120px;
+                height: 120px;
+            }
+        }
     }
     .socials {
         width: 10%;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-end;
+        padding: 10px 20px 0 0;
+        .item {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
  
 }
-.font {
+.site {
     font-family: "Monaco", monospace;
+    width: 900px;
+    flex-direction: column;
+    margin: 0 auto;
 }
 .nav-bar {
     height: 50px;
@@ -36,10 +63,14 @@
 .site-update {
     background-color: #f7f0fa;
     height: 30px;
-    margin: 0 -10px;
+    margin: -8px -10px 0 -10px;
     justify-content: space-between;
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
     .item {
         text-decoration: none;
+        color: black;
     }
 }
 
