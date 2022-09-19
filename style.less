@@ -6,18 +6,62 @@
     padding: 20px;
     .content {
         padding-left: 20px;
-        width: 90%;
         .header {
             gap: 40px;
             .text {
                 .name {
-                    font-size: 30px;
+                    font-size: 50px;
+                }
+            }
+            .resume {
+                border-radius: 15px;
+                padding: 8px;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                text-decoration: none;
+                color: black;
+                img {
+                    width: 40px;
+                    height: 40px;
                 }
             }
             .image {
                 border-radius: 15px;
                 width: 120px;
                 height: 120px;
+            }
+        }
+        .category {
+            padding: 10px;
+            .title {
+                font-size: 30px;
+            }
+            .item-container {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 50px;
+                .item {
+                    &:hover {
+                        border: 2px solid #8ab58e;
+                        cursor: pointer;
+                    }
+                    width: 350px;
+                    height: 300px;
+                    border: 2px solid white;
+                    border-radius: 15px;
+                }
+                .item-purple {
+                    &:hover {
+                        border: 2px solid #7302a3;
+                        cursor: pointer;
+                    }
+                    width: 350px;
+                    height: 300px;
+                    border: 2px solid #f7f0fa;
+                    border-radius: 15px;
+                }
             }
         }
     }
@@ -33,6 +77,10 @@
                 height: 30px;
             }
         }
+    }
+    .contact {
+        flex-direction: row;
+        align-items: center;
     }
  
 }
@@ -61,7 +109,6 @@
 }
 
 .site-update {
-    background-color: #f7f0fa;
     height: 30px;
     margin: -8px -10px 0 -10px;
     justify-content: space-between;
@@ -78,3 +125,13 @@
     display: flex;
 }
 
+.center {
+    text-align: center;
+}
+
+.light-purple {
+    background-color: #f7f0fa;
+}
+.purple {
+    background-color: #7302a3;
+}
